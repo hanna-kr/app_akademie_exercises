@@ -17,7 +17,7 @@ class _SwitchExercisePageState extends State<SwitchExercisePage> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).primaryColor,
-          title: const Text('Aufgabe 1'),
+          title: const Text('Switch exercise'),
         ),
         body: Column(
           children: [

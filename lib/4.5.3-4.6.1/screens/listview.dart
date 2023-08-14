@@ -22,7 +22,7 @@ class MyListViewPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 6, 78, 94),
-        title: const Text('ListView Exercise'),
+        title: const Text('ListView exercise'),
       ),
       body: ListView.builder(
         itemCount: products.length,
