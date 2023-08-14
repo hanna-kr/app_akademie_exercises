@@ -1,4 +1,4 @@
-import 'package:app_akademie_exercises/5.1.1/screens/home_page.dart';
+import 'package:app_akademie_exercises/5.1.1/styles/colors.dart';
 import 'package:app_akademie_exercises/5.1.1/widgets/custom_material_button.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +18,10 @@ class MyCustomButtonPage extends StatelessWidget {
           children: [
             MyCustomButton(
               color: Theme.of(context).primaryColor.withOpacity(0.6),
-              icon: Icon(Icons.home_filled),
+              icon: Icon(
+                Icons.home_filled,
+                color: Colors.white,
+              ),
               onPressed: () {
                 Navigator.popUntil(context, (route) => route.isFirst);
               },

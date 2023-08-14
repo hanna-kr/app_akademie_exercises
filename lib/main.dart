@@ -25,17 +25,17 @@ class MyApp extends StatelessWidget {
       title: 'Combined Exercises',
       initialRoute: '/',
       routes: {
-        '/': (context) => HomePage(),
+        '/': (context) => const HomePage(),
         '/weather_app': (context) =>
             WeatherApp(weatherData: WeatherData('Berlin', 25, 'sunny')),
-        '/column_row': (context) => MyColumnRowPage(),
-        '/sized_box': (context) => MySizedBoxPage(),
+        '/column_row': (context) => const MyColumnRowPage(),
+        '/sized_box': (context) => const MySizedBoxPage(),
         '/list_view': (context) => MyListViewPage(),
         '/navigator': (context) => MyNavigatorPage(),
-        '/navigator_details': (context) => DetailsScreen(),
+        '/navigator_details': (context) => const DetailsScreen(),
         '/switch_exercise': (context) => const SwitchExercisePage(),
-        '/animal_profile': (context) => AnimalProfilePage(),
-        '/material_button': (context) => MyCustomButtonPage(),
+        '/animal_profile': (context) => const AnimalProfilePage(),
+        '/material_button': (context) => const MyCustomButtonPage(),
       },
     );
   }

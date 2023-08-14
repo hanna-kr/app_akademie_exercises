@@ -10,10 +10,10 @@ class MyCustomButton extends StatefulWidget {
       {super.key, required this.onPressed, this.title, this.icon, this.color});
 
   @override
-  _MyCustomButtonState createState() => _MyCustomButtonState();
+  MyCustomButtonState createState() => MyCustomButtonState();
 }
 
-class _MyCustomButtonState extends State<MyCustomButton> {
+class MyCustomButtonState extends State<MyCustomButton> {
   @override
   Widget build(BuildContext context) {
     return Material(
