@@ -22,7 +22,8 @@ class BlobPackageExercise extends StatelessWidget {
               loop: true,
               styles: BlobStyles(
                   color: const Color.fromARGB(105, 155, 39, 176),
-                  fillType: BlobFillType.stroke),
+                  fillType: BlobFillType.stroke,
+                  strokeWidth: 3),
               child: Center(
                 child: Blob.animatedRandom(
                   size: 400,
