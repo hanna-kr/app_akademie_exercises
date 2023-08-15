@@ -3,8 +3,8 @@ import 'package:app_akademie_exercises/5.1.1-1.2/styles/styles.dart';
 import 'package:blobs/blobs.dart';
 import 'package:flutter/material.dart';
 
-class PackageExercise extends StatelessWidget {
-  const PackageExercise({super.key});
+class BlobPackageExercise extends StatelessWidget {
+  const BlobPackageExercise({super.key});
 
   @override
   Widget build(BuildContext context) {

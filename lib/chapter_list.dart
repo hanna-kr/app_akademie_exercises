@@ -19,7 +19,7 @@ final List<Chapter> chapters = [
       Exercise(name: 'Profile / Steckbrief / Styles', route: '/animal_profile'),
       Exercise(name: 'Material Button', route: '/material_button'),
       Exercise(name: 'Animation / TextStyle', route: '/animation_exercise'),
-      Exercise(name: 'Package / blobs', route: '/package_exercise'),
+      Exercise(name: 'Package / blobs', route: '/blob_package_exercise'),
     ],
   ),
 ];
