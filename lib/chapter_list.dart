@@ -6,7 +6,7 @@ final List<Chapter> chapters = [
     title: 'Kapitel 4 Slides 5.3-6.1',
     exercises: [
       Exercise(name: 'Weather App', route: '/weather_app'),
-      Exercise(name: 'Column and Row', route: '/column_row'),
+      Exercise(name: 'Column / Row', route: '/column_row'),
       Exercise(name: 'Sized Box', route: '/sized_box'),
       Exercise(name: 'List View', route: '/list_view'),
       Exercise(name: 'Navigator', route: '/navigator'),
@@ -18,6 +18,7 @@ final List<Chapter> chapters = [
       Exercise(name: 'Column / Row / Switch', route: '/switch_exercise'),
       Exercise(name: 'Profile / Steckbrief / Styles', route: '/animal_profile'),
       Exercise(name: 'Material Button', route: '/material_button'),
+      Exercise(name: 'Animation / TextStyle', route: '/animation_exercise'),
     ],
   ),
 ];

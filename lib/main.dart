@@ -4,6 +4,7 @@ import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/column_row.dart';
 import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/listview.dart';
 import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/sized_box.dart';
 import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/weather_app.dart';
+import 'package:app_akademie_exercises/5.1.1/screens/animation_exercise.dart';
 import 'package:app_akademie_exercises/5.1.1/screens/home_page.dart';
 import 'package:app_akademie_exercises/5.1.1/screens/material_button_page.dart';
 import 'package:app_akademie_exercises/5.1.1/screens/profile.dart';
@@ -21,7 +22,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primaryColor: const Color.fromARGB(255, 6, 78, 94)),
+      theme: ThemeData(
+        primaryColor: const Color.fromARGB(255, 6, 78, 94),
+      ),
       title: 'Combined Exercises',
       initialRoute: '/',
       routes: {
@@ -36,6 +39,7 @@ class MyApp extends StatelessWidget {
         '/switch_exercise': (context) => const SwitchExercisePage(),
         '/animal_profile': (context) => const AnimalProfilePage(),
         '/material_button': (context) => const MyCustomButtonPage(),
+        '/animation_exercise': (context) => const AnimationPage()
       },
     );
   }
