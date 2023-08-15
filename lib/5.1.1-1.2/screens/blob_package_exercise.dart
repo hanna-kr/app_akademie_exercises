@@ -47,7 +47,7 @@ class BlobPackageExercise extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            'Quote:',
+                            'Quote',
                             style: kHeader1,
                           ),
                           kPlaceholder8,
