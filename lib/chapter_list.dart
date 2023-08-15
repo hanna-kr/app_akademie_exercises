@@ -13,12 +13,13 @@ final List<Chapter> chapters = [
     ],
   ),
   Chapter(
-    title: 'Kapitel 5 Slides 1.1',
+    title: 'Kapitel 5 Slides 1.1-1.2',
     exercises: [
       Exercise(name: 'Column / Row / Switch', route: '/switch_exercise'),
       Exercise(name: 'Profile / Steckbrief / Styles', route: '/animal_profile'),
       Exercise(name: 'Material Button', route: '/material_button'),
       Exercise(name: 'Animation / TextStyle', route: '/animation_exercise'),
+      Exercise(name: 'Package / blobs', route: '/package_exercise'),
     ],
   ),
 ];

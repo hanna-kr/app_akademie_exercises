@@ -7,6 +7,7 @@ import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/weather_app.dart';
 import 'package:app_akademie_exercises/5.1.1/screens/animation_exercise.dart';
 import 'package:app_akademie_exercises/5.1.1/screens/home_page.dart';
 import 'package:app_akademie_exercises/5.1.1/screens/material_button_page.dart';
+import 'package:app_akademie_exercises/5.1.1/screens/package_exercise.dart';
 import 'package:app_akademie_exercises/5.1.1/screens/profile.dart';
 import 'package:app_akademie_exercises/5.1.1/screens/switch_class.dart';
 import 'package:flutter/material.dart';
@@ -39,7 +40,8 @@ class MyApp extends StatelessWidget {
         '/switch_exercise': (context) => const SwitchExercisePage(),
         '/animal_profile': (context) => const AnimalProfilePage(),
         '/material_button': (context) => const MyCustomButtonPage(),
-        '/animation_exercise': (context) => const AnimationPage()
+        '/animation_exercise': (context) => const AnimationPage(),
+        '/package_exercise': (context) => const PackageExercise()
       },
     );
   }
