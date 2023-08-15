@@ -3,7 +3,7 @@ import 'package:app_akademie_exercises/chapter_list.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 //Big Placeholder
 
-const SizedBox placeholder1 = SizedBox(
+const SizedBox kPlaceholder48 = SizedBox(
   height: 48,
 );
 
 // Medium Placeholder
 
-const SizedBox placeholder3 = SizedBox(height: 16);
+const SizedBox kPlaceholder16 = SizedBox(height: 16);
 
 //Placeholder between title and subtitle
 
-const SizedBox placeholder2 = SizedBox(height: 8);
+const SizedBox kPlaceholder8 = SizedBox(height: 8);

@@ -21,12 +21,12 @@ class _SwitchExercisePageState extends State<SwitchExercisePage> {
         ),
         body: Column(
           children: [
-            placeholder1,
+            kPlaceholder48,
             Text(
               'Hello World!',
               style: kHeader1,
             ),
-            placeholder1,
+            kPlaceholder48,
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -45,7 +45,7 @@ class _SwitchExercisePageState extends State<SwitchExercisePage> {
                 )
               ],
             ),
-            placeholder1,
+            kPlaceholder48,
             Switch(
               // This bool value toggles the switch.
               value: switchOn,

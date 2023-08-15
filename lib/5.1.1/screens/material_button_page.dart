@@ -1,4 +1,3 @@
-import 'package:app_akademie_exercises/5.1.1/styles/colors.dart';
 import 'package:app_akademie_exercises/5.1.1/widgets/custom_material_button.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +8,7 @@ class MyCustomButtonPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Custom Material Button'),
+        title: const Text('Custom Material Button'),
         backgroundColor: Theme.of(context).primaryColor,
       ),
       body: Center(
@@ -18,7 +17,7 @@ class MyCustomButtonPage extends StatelessWidget {
           children: [
             MyCustomButton(
               color: Theme.of(context).primaryColor.withOpacity(0.6),
-              icon: Icon(
+              icon: const Icon(
                 Icons.home_filled,
                 color: Colors.white,
               ),

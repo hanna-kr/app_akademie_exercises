@@ -30,11 +30,11 @@ class MyCustomButtonState extends State<MyCustomButton> {
             children: [
               if (widget.icon != null) widget.icon!,
               if (widget.title != null && widget.icon != null)
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
               if (widget.title != null)
                 Text(
                   widget.title!,
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
                 ),
             ],
           ),
