@@ -1,4 +1,4 @@
-import 'package:app_akademie_exercises/5.1.1/styles/styles.dart';
+import 'package:app_akademie_exercises/5.1.1-1.2/styles/styles.dart';
 import 'package:app_akademie_exercises/chapter_list.dart';
 import 'package:flutter/material.dart';
 

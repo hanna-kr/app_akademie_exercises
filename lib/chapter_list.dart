@@ -1,5 +1,5 @@
-import 'package:app_akademie_exercises/5.1.1/classes/chapter.dart';
-import 'package:app_akademie_exercises/5.1.1/classes/exercise.dart';
+import 'package:app_akademie_exercises/5.1.1-1.2/classes/chapter.dart';
+import 'package:app_akademie_exercises/5.1.1-1.2/classes/exercise.dart';
 
 final List<Chapter> chapters = [
   Chapter(

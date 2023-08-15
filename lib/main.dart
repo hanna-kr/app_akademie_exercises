@@ -4,12 +4,12 @@ import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/column_row.dart';
 import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/listview.dart';
 import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/sized_box.dart';
 import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/weather_app.dart';
-import 'package:app_akademie_exercises/5.1.1/screens/animation_exercise.dart';
-import 'package:app_akademie_exercises/5.1.1/screens/home_page.dart';
-import 'package:app_akademie_exercises/5.1.1/screens/material_button_page.dart';
-import 'package:app_akademie_exercises/5.1.1/screens/package_exercise.dart';
-import 'package:app_akademie_exercises/5.1.1/screens/profile.dart';
-import 'package:app_akademie_exercises/5.1.1/screens/switch_class.dart';
+import 'package:app_akademie_exercises/5.1.1-1.2/screens/animation_exercise.dart';
+import 'package:app_akademie_exercises/5.1.1-1.2/screens/home_page.dart';
+import 'package:app_akademie_exercises/5.1.1-1.2/screens/material_button_page.dart';
+import 'package:app_akademie_exercises/5.1.1-1.2/screens/package_exercise.dart';
+import 'package:app_akademie_exercises/5.1.1-1.2/screens/profile.dart';
+import 'package:app_akademie_exercises/5.1.1-1.2/screens/switch_class.dart';
 import 'package:flutter/material.dart';
 
 void main() {
