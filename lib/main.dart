@@ -12,21 +12,39 @@ import 'package:app_akademie_exercises/5.1.1-1.2/screens/blob_package_exercise.d
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/profile.dart';
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/switch_class.dart';
 import 'package:app_akademie_exercises/5.1.3/screens/font_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3/screens/light_dark_exercise.dart';
+import 'package:app_akademie_exercises/styles/text_theme.dart';
+import 'package:app_akademie_exercises/styles/theme_color.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  bool isDarkMode = false;
+
+  void callBackFunction(bool switchOn) {
+    setState(() {
+      isDarkMode = switchOn;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: const Color.fromARGB(255, 6, 78, 94),
+        primaryColor: appAkademieColor.primaryColor,
+        textTheme: appAkademieTextTheme,
+        brightness: isDarkMode ? Brightness.dark : Brightness.light,
       ),
       title: 'Combined Exercises',
       initialRoute: '/',
@@ -46,6 +64,8 @@ class MyApp extends StatelessWidget {
         '/blob_package_exercise': (context) => const BlobPackageExercise(),
         '/cardswipe_package_exercise': (context) => CardSwipePackage(),
         '/font_exercise': (context) => const FontExercisePage(),
+        '/light_dark_exercise': (context) =>
+            LightDarkExercise(callBackFunction: callBackFunction),
       },
     );
   }

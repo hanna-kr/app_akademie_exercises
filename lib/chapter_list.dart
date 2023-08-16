@@ -28,6 +28,8 @@ final List<Chapter> chapters = [
     title: 'Kapitel 5 Slides 1.3',
     exercises: [
       Exercise(name: 'Assets / Fonts', route: '/font_exercise'),
+      Exercise(
+          name: 'Light- / Darkmode / Switch', route: '/light_dark_exercise'),
     ],
   )
 ];

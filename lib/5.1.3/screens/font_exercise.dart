@@ -97,7 +97,7 @@ class _FontExercisePageState extends State<FontExercisePage> {
                             child: Text(
                               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi nullam vehicula ipsum a arcu. Placerat in egestas erat imperdiet sed euismod nisi.',
                               style: kRegularText2,
-                              overflow: TextOverflow.ellipsis,
+                              overflow: TextOverflow.clip,
                               maxLines: isExpanded2 ? 12 : 4,
                             ),
                           ),
