@@ -24,4 +24,10 @@ final List<Chapter> chapters = [
           name: 'Package / card_swiper', route: '/cardswipe_package_exercise'),
     ],
   ),
+  Chapter(
+    title: 'Kapitel 5 Slides 1.3',
+    exercises: [
+      Exercise(name: 'Assets / Fonts', route: '/font_exercise'),
+    ],
+  )
 ];

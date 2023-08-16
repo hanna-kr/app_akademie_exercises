@@ -1,5 +1,5 @@
-import 'package:app_akademie_exercises/5.1.1-1.2/styles/placeholder.dart';
-import 'package:app_akademie_exercises/5.1.1-1.2/styles/styles.dart';
+import 'package:app_akademie_exercises/styles/placeholder.dart';
+import 'package:app_akademie_exercises/styles/textstyles.dart';
 import 'package:flutter/material.dart';
 
 class SwitchExercisePage extends StatefulWidget {

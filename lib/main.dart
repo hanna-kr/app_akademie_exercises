@@ -11,6 +11,7 @@ import 'package:app_akademie_exercises/5.1.1-1.2/screens/material_button_page.da
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/blob_package_exercise.dart';
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/profile.dart';
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/switch_class.dart';
+import 'package:app_akademie_exercises/5.1.3/screens/font_exercise.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -43,7 +44,8 @@ class MyApp extends StatelessWidget {
         '/material_button': (context) => const MyCustomButtonPage(),
         '/animation_exercise': (context) => const AnimationPage(),
         '/blob_package_exercise': (context) => const BlobPackageExercise(),
-        '/cardswipe_package_exercise': (context) => CardSwipePackage()
+        '/cardswipe_package_exercise': (context) => CardSwipePackage(),
+        '/font_exercise': (context) => const FontExercisePage(),
       },
     );
   }
