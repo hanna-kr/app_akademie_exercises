@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 class LightDarkExercise extends StatefulWidget {
   final Function callBackFunction;
-  const LightDarkExercise({Key? key, required this.callBackFunction})
-      : super(key: key);
+  const LightDarkExercise({super.key, required this.callBackFunction});
 
   @override
   State<LightDarkExercise> createState() => _LightDarkExerciseState();

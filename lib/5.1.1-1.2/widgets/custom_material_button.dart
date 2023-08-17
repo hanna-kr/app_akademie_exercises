@@ -17,6 +17,7 @@ class MyCustomButtonState extends State<MyCustomButton> {
   @override
   Widget build(BuildContext context) {
     return Material(
+      elevation: 8,
       borderRadius: BorderRadius.circular(8),
       color: widget.color ?? Theme.of(context).primaryColor.withOpacity(0.4),
       child: InkWell(

@@ -37,7 +37,7 @@ class BlobPackageExercise extends StatelessWidget {
                       size: 300,
                       duration: const Duration(milliseconds: 1000),
                       styles: BlobStyles(
-                          gradient: LinearGradient(colors: [
+                          gradient: RadialGradient(colors: [
                         Colors.purple.withOpacity(0.4),
                         Colors.cyan.withOpacity(0.4),
                       ]).createShader(const Rect.fromLTRB(0, 0, 300, 300))),
