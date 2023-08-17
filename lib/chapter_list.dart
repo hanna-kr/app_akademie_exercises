@@ -30,7 +30,7 @@ final List<Chapter> chapters = [
       Exercise(name: 'Assets / Fonts', route: '/font_exercise'),
       Exercise(
           name: 'Light- / Darkmode / Switch', route: '/light_dark_exercise'),
-      Exercise(name: 'Box Decoration', route: '/box_decoration'),
+      Exercise(name: 'Box Decoration / Grid View', route: '/box_decoration'),
     ],
   )
 ];
