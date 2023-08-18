@@ -15,7 +15,7 @@ class MyListViewPage extends StatelessWidget {
     Products(productName: 'Produkt 4', productPrice: 12.50)
   ];
 
-  MyListViewPage({Key? key}) : super(key: key);
+  MyListViewPage({super.key});
 
   @override
   Widget build(BuildContext context) {
