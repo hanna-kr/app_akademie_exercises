@@ -9,7 +9,7 @@ class WeatherApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 6, 78, 94),
+        backgroundColor: Theme.of(context).primaryColor,
         title: const Text("Weather App"),
       ),
       body: SafeArea(

@@ -26,3 +26,11 @@ TextStyle kFancyHeader2 = const TextStyle(
 
 TextStyle kRegularText2 =
     const TextStyle(fontSize: 16, fontFamily: 'Montserrat');
+
+class MyTextStyle {
+  final TextStyle myTypo;
+
+  MyTextStyle({required this.myTypo});
+}
+
+MyTextStyle 

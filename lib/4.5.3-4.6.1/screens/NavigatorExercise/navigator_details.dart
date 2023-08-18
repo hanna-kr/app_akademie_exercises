@@ -10,7 +10,7 @@ class DetailsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Details Screen'),
-        backgroundColor: const Color.fromARGB(255, 6, 78, 94),
+        backgroundColor: Theme.of(context).primaryColor,
       ),
       body: Center(
         child: Column(
