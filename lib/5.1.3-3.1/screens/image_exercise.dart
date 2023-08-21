@@ -3,6 +3,7 @@ import 'package:app_akademie_exercises/styles/spacing.dart';
 import 'package:app_akademie_exercises/styles/textstyles.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'dart:io';
 
 class ImageExercise extends StatelessWidget {
   const ImageExercise({super.key});
@@ -48,7 +49,14 @@ class ImageExercise extends StatelessWidget {
                           'https://images.unsplash.com/photo-1542878909-b444d587c249?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80'),
                   title: 'Drakensberg',
                   subtitle:
-                      'The Drakensberg Mountains form a dramatic natural border between Lesotho and South Africa. ')
+                      'The Drakensberg Mountains form a dramatic natural border between Lesotho and South Africa. '),
+              CardContents(
+                  image: Image(
+                      image: FileImage(
+                          File('/Users/hanna/Development/tsitsikamma.jpeg'))),
+                  title: 'Tsitsikamma National Park',
+                  subtitle:
+                      'Tsitsikamma National Park is a multi-dimensional destination with dramatic coastal scenery, reefs, rivers, lush forest and delicate Fynbos.')
             ])
           ],
         ),
