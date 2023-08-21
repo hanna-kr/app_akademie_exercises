@@ -28,13 +28,11 @@ class ImageCard extends StatelessWidget {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.only(top: 8, left: 8, right: 8),
                     child: ClipRRect(
                       borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(10),
                         topRight: Radius.circular(10),
-                        // bottomLeft: Radius.circular(10),
-                        // bottomRight: Radius.circular(10)
                       ),
                       child: adventures[index].image,
                     ),
@@ -43,8 +41,14 @@ class ImageCard extends StatelessWidget {
                     title: Text(
                       adventures[index].title,
                       style: kHeader2,
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
                     ),
-                    subtitle: Text(adventures[index].subtitle ?? ''),
+                    subtitle: Text(
+                      adventures[index].subtitle ?? '',
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
+                    ),
                     trailing: IconButton(
                         alignment: Alignment.centerRight,
                         icon: const Icon(Icons.favorite),
