@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+// Fat big Header
+
+TextStyle kFBHeader =
+    const TextStyle(fontSize: 24, fontWeight: FontWeight.w800);
+
 // Big Header
 
 TextStyle kHeader1 = const TextStyle(fontSize: 22, fontWeight: FontWeight.w600);
@@ -26,11 +31,3 @@ TextStyle kFancyHeader2 = const TextStyle(
 
 TextStyle kRegularText2 =
     const TextStyle(fontSize: 16, fontFamily: 'Montserrat');
-
-class MyTextStyle {
-  final TextStyle myTypo;
-
-  MyTextStyle({required this.myTypo});
-}
-
-MyTextStyle 

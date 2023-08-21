@@ -11,9 +11,10 @@ import 'package:app_akademie_exercises/5.1.1-1.2/screens/material_button_page.da
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/blob_package_exercise.dart';
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/profile.dart';
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/switch_class.dart';
-import 'package:app_akademie_exercises/5.1.3/screens/box_decoration.dart';
-import 'package:app_akademie_exercises/5.1.3/screens/font_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3/screens/light_dark_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-3.1/screens/box_decoration.dart';
+import 'package:app_akademie_exercises/5.1.3-3.1/screens/font_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-3.1/screens/image_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-3.1/screens/light_dark_exercise.dart';
 import 'package:app_akademie_exercises/styles/text_theme.dart';
 import 'package:app_akademie_exercises/styles/theme_color.dart';
 import 'package:flutter/material.dart';
@@ -68,6 +69,7 @@ class _MyAppState extends State<MyApp> {
         '/light_dark_exercise': (context) =>
             LightDarkExercise(callBackFunction: callBackFunction),
         '/box_decoration': (context) => const BoxDecoExercise(),
+        '/image_exercise': (context) => const ImageExercise(),
       },
     );
   }

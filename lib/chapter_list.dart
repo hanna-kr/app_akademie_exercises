@@ -25,12 +25,14 @@ final List<Chapter> chapters = [
     ],
   ),
   Chapter(
-    title: 'Kapitel 5 Slides 1.3',
+    title: 'Kapitel 5 Slides 1.3-3.1',
     exercises: [
       Exercise(name: 'Assets / Fonts', route: '/font_exercise'),
       Exercise(
           name: 'Light- / Darkmode / Switch', route: '/light_dark_exercise'),
       Exercise(name: 'Box Decoration / Grid View', route: '/box_decoration'),
+      Exercise(
+          name: 'Images: Asset / Network / Cache', route: '/image_exercise'),
     ],
   )
 ];

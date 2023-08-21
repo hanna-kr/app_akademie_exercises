@@ -38,6 +38,7 @@ dependencies:
   blobs: ^2.0.0
   card_swiper: ^3.0.1
   google_fonts: ^5.1.0
+  cached_network_image: ^3.2.3
 
 dev_dependencies:
   flutter_test:
@@ -60,6 +61,9 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+    - assets/images/capetown.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:

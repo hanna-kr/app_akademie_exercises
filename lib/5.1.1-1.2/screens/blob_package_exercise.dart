@@ -1,4 +1,4 @@
-import 'package:app_akademie_exercises/styles/placeholder.dart';
+import 'package:app_akademie_exercises/styles/spacing.dart';
 import 'package:app_akademie_exercises/styles/textstyles.dart';
 import 'package:blobs/blobs.dart';
 import 'package:flutter/material.dart';
@@ -50,7 +50,7 @@ class BlobPackageExercise extends StatelessWidget {
                             'Quote',
                             style: kHeader1,
                           ),
-                          kPlaceholder8,
+                          kSpacing8,
                           const Text(
                             '"blobbies are sexy"',
                             style: TextStyle(fontStyle: FontStyle.italic),

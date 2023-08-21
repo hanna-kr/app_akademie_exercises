@@ -1,4 +1,4 @@
-import 'package:app_akademie_exercises/styles/placeholder.dart';
+import 'package:app_akademie_exercises/styles/spacing.dart';
 import 'package:app_akademie_exercises/styles/textstyles.dart';
 import 'package:flutter/material.dart';
 
@@ -62,7 +62,7 @@ class _FontExercisePageState extends State<FontExercisePage> {
               ],
             ),
           ),
-          kPlaceholder16,
+          kSpacing16,
           Center(
             child: Column(
               children: [

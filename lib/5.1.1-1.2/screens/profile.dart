@@ -1,4 +1,4 @@
-import 'package:app_akademie_exercises/styles/placeholder.dart';
+import 'package:app_akademie_exercises/styles/spacing.dart';
 import 'package:app_akademie_exercises/styles/textstyles.dart';
 import 'package:flutter/material.dart';
 
@@ -23,33 +23,33 @@ class AnimalProfilePage extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            kPlaceholder48,
+            kSpacing48,
             Text(
               'Name:',
               style: kHeader2,
             ),
-            kPlaceholder8,
+            kSpacing8,
             const Text('Toothy das Lama'),
-            kPlaceholder16,
+            kSpacing16,
             Text(
               'Gewicht:',
               style: kHeader2,
             ),
-            kPlaceholder8,
+            kSpacing8,
             const Text('180 kg'),
-            kPlaceholder16,
+            kSpacing16,
             Text(
               'Größe:',
               style: kHeader2,
             ),
-            kPlaceholder8,
+            kSpacing8,
             const Text('130 cm'),
-            kPlaceholder16,
+            kSpacing16,
             Text(
               'Lieblingsessen:',
               style: kHeader2,
             ),
-            kPlaceholder8,
+            kSpacing8,
             const Text('Salzstangen'),
           ],
         ),

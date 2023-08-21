@@ -1,4 +1,4 @@
-import 'package:app_akademie_exercises/styles/placeholder.dart';
+import 'package:app_akademie_exercises/styles/spacing.dart';
 import 'package:app_akademie_exercises/styles/textstyles.dart';
 import 'package:flutter/material.dart';
 
@@ -21,12 +21,12 @@ class _SwitchExercisePageState extends State<SwitchExercisePage> {
         ),
         body: Column(
           children: [
-            kPlaceholder48,
+            kSpacing48,
             Text(
               'Hello World!',
               style: kHeader1,
             ),
-            kPlaceholder48,
+            kSpacing48,
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -45,7 +45,7 @@ class _SwitchExercisePageState extends State<SwitchExercisePage> {
                 )
               ],
             ),
-            kPlaceholder48,
+            kSpacing48,
             Switch(
               // This bool value toggles the switch.
               value: switchOn,
