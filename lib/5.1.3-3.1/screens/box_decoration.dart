@@ -14,8 +14,8 @@ class BoxDecoExercise extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8),
         child: GridView.count(
-          mainAxisSpacing: 8,
-          crossAxisSpacing: 8,
+          mainAxisSpacing: 4,
+          crossAxisSpacing: 4,
           crossAxisCount: 2,
           children: List.generate(
             4,
@@ -27,8 +27,8 @@ class BoxDecoExercise extends StatelessWidget {
                     Navigator.popUntil(context, (route) => route.isFirst);
                   },
                   child: Container(
-                    height: 200,
-                    width: 166,
+                    height: 180,
+                    width: 156,
                     decoration: const BoxDecoration(
                       color: Colors.teal,
                       boxShadow: [
