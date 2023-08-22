@@ -3,7 +3,7 @@ import 'package:app_akademie_exercises/styles/spacing.dart';
 import 'package:app_akademie_exercises/styles/textstyles.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'dart:io';
+// import 'dart:io';
 
 class ImageExercise extends StatelessWidget {
   const ImageExercise({super.key});
