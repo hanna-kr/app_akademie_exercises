@@ -50,13 +50,13 @@ class ImageExercise extends StatelessWidget {
                   title: 'Drakensberg',
                   subtitle:
                       'The Drakensberg Mountains form a dramatic natural border between Lesotho and South Africa. '),
-              CardContents(
-                  image: Image(
-                      image: FileImage(
-                          File('/Users/hanna/Development/tsitsikamma.jpeg'))),
-                  title: 'Tsitsikamma National Park',
-                  subtitle:
-                      'Tsitsikamma National Park is a multi-dimensional destination with dramatic coastal scenery, reefs, rivers, lush forest and delicate Fynbos.')
+              // CardContents(
+              //     image: Image(
+              //         image: FileImage(
+              //             File('/Users/hanna/Development/tsitsikamma.jpeg'))),
+              //     title: 'Tsitsikamma National Park',
+              //     subtitle:
+              //         'Tsitsikamma National Park is a multi-dimensional destination with dramatic coastal scenery, reefs, rivers, lush forest and delicate Fynbos.'),
             ])
           ],
         ),
