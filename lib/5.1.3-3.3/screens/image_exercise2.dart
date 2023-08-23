@@ -1,6 +1,5 @@
 import 'package:app_akademie_exercises/styles/spacing.dart';
 import 'package:app_akademie_exercises/styles/textstyles.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class HotelProducts {
@@ -12,8 +11,8 @@ class HotelProducts {
       {required this.imageUrl, required this.name, required this.description});
 }
 
-class ImageExercise3 extends StatelessWidget {
-  ImageExercise3({super.key});
+class ImageExercise2 extends StatelessWidget {
+  ImageExercise2({super.key});
 
   final List<HotelProducts> hotels = [
     HotelProducts(
@@ -40,7 +39,7 @@ class ImageExercise3 extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 253, 246),
       appBar: AppBar(
-        title: const Text('Images'),
+        title: const Text('Loading indicator - Error'),
         backgroundColor: Theme.of(context).primaryColor,
       ),
       body: Column(
@@ -71,11 +70,26 @@ class ImageExercise3 extends StatelessWidget {
                               topLeft: Radius.circular(10),
                               topRight: Radius.circular(10),
                             ),
-                            child: CachedNetworkImage(
-                              imageUrl: hotels[index].imageUrl,
+                            child: Image.network(
+                              hotels[index].imageUrl,
                               fit: BoxFit.cover,
-                              placeholder: (context, url) =>
-                                  Image.network(hotels[index].imageUrl),
+                              errorBuilder: (context, error, stackTrace) {
+                                return Image.network(
+                                    'https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg');
+                              },
+                              loadingBuilder:
+                                  (context, child, loadingProgress) {
+                                return loadingProgress == null
+                                    ? child
+                                    : LinearProgressIndicator(
+                                        color: Theme.of(context)
+                                            .primaryColor
+                                            .withOpacity(0.6),
+                                        backgroundColor: Theme.of(context)
+                                            .primaryColor
+                                            .withOpacity(0.3),
+                                      );
+                              },
                             ),
                           ),
                         ),
