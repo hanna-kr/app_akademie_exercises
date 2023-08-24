@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 class MyCircleAvatar extends StatefulWidget {
   const MyCircleAvatar({super.key});
@@ -8,22 +11,41 @@ class MyCircleAvatar extends StatefulWidget {
 }
 
 class _CircleAvatarState extends State<MyCircleAvatar> {
+  String image = '';
+
+  Future pickImage() async {
+    final temporaryImage =
+        await ImagePicker().pickImage(source: ImageSource.camera);
+
+    setState(() {
+      image = temporaryImage?.path ?? '';
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 200,
-      height: 200,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: Theme.of(context).primaryColor.withOpacity(0.2),
-      ),
-      child: Center(
-          child: IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.person,
-                size: 40,
-              ))),
+    return GestureDetector(
+      onTap: () {
+        pickImage();
+      },
+      child: Container(
+          clipBehavior: Clip.hardEdge,
+          width: 200,
+          height: 200,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: Theme.of(context).primaryColor.withOpacity(0.2),
+          ),
+          child: image == ''
+              ? const Icon(
+                  Icons.person,
+                  size: 40,
+                  color: Colors.blueGrey,
+                )
+              : Image.file(
+                  File(image),
+                  fit: BoxFit.cover,
+                )),
     );
   }
 }

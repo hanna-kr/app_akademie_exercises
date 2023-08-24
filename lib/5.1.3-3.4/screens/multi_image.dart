@@ -1,4 +1,5 @@
 import 'package:app_akademie_exercises/5.1.3-3.4/components/circle_avatar.dart';
+import 'package:app_akademie_exercises/5.1.3-3.4/components/gallery_list.dart';
 import 'package:app_akademie_exercises/styles/spacing.dart';
 import 'package:app_akademie_exercises/styles/textstyles.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,11 @@ class _MultiImageExerciseState extends State<MultiImageExercise> {
         backgroundColor: Theme.of(context).primaryColor,
         title: const Text('Multi Image Layout'),
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.settings))
+          IconButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/settings');
+              },
+              icon: const Icon(Icons.settings))
         ],
       ),
       body: Padding(
@@ -45,6 +50,7 @@ class _MultiImageExerciseState extends State<MultiImageExercise> {
                 thickness: 1,
               ),
             ),
+            const MyGalleryList(),
           ],
         ),
       ),
