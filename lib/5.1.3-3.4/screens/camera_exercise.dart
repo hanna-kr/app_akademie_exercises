@@ -15,10 +15,10 @@ class CameraExercise extends StatefulWidget {
 class _CameraExerciseState extends State<CameraExercise> {
   List<String> imagePath = [];
 
-  Future<void> pickImage(ImageSource src) async {
-    final images = await ImagePicker().pickMultiImage();
+  Future pickImage(ImageSource src) async {
+    final image = await ImagePicker().pickImage(source: src);
     setState(() {
-      for (var image in images) {
+      if (image != null) {
         imagePath.add(image.path);
       }
     });

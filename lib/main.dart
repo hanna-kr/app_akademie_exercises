@@ -11,13 +11,14 @@ import 'package:app_akademie_exercises/5.1.1-1.2/screens/material_button_page.da
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/blob_package_exercise.dart';
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/profile.dart';
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/switch_class.dart';
-import 'package:app_akademie_exercises/5.1.3-3.3/screens/box_decoration.dart';
-import 'package:app_akademie_exercises/5.1.3-3.3/screens/camera_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-3.3/screens/font_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-3.3/screens/image_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-3.3/screens/image_exercise2.dart';
-import 'package:app_akademie_exercises/5.1.3-3.3/screens/image_exercise3.dart';
-import 'package:app_akademie_exercises/5.1.3-3.3/screens/light_dark_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-3.4/screens/box_decoration.dart';
+import 'package:app_akademie_exercises/5.1.3-3.4/screens/camera_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-3.4/screens/font_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-3.4/screens/image_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-3.4/screens/image_exercise2.dart';
+import 'package:app_akademie_exercises/5.1.3-3.4/screens/image_exercise3.dart';
+import 'package:app_akademie_exercises/5.1.3-3.4/screens/light_dark_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-3.4/screens/multi_image.dart';
 import 'package:app_akademie_exercises/styles/text_theme.dart';
 import 'package:app_akademie_exercises/styles/theme_color.dart';
 import 'package:flutter/material.dart';
@@ -76,6 +77,7 @@ class _MyAppState extends State<MyApp> {
         '/image_exercise2': (context) => ImageExercise2(),
         '/image_exercise3': (context) => ImageExercise3(),
         '/camera_exercise': (context) => const CameraExercise(),
+        '/multi_image_exercise': (context) => const MultiImageExercise(),
       },
     );
   }

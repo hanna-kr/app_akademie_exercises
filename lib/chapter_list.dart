@@ -36,6 +36,7 @@ final List<Chapter> chapters = [
       Exercise(name: 'Images: Placeholder', route: '/image_exercise2'),
       Exercise(name: 'Images: Thumbnail', route: '/image_exercise3'),
       Exercise(name: 'Camera', route: '/camera_exercise'),
+      Exercise(name: 'Multi-Image-Layout', route: '/multi_image_exercise'),
     ],
   )
 ];
