@@ -14,6 +14,7 @@ import 'package:app_akademie_exercises/5.1.1-1.2/screens/switch_class.dart';
 import 'package:app_akademie_exercises/5.1.3-3.4/screens/box_decoration.dart';
 import 'package:app_akademie_exercises/5.1.3-3.4/screens/camera_exercise.dart';
 import 'package:app_akademie_exercises/5.1.3-3.4/screens/font_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-3.4/screens/image_details.dart';
 import 'package:app_akademie_exercises/5.1.3-3.4/screens/image_exercise.dart';
 import 'package:app_akademie_exercises/5.1.3-3.4/screens/image_exercise2.dart';
 import 'package:app_akademie_exercises/5.1.3-3.4/screens/image_exercise3.dart';
@@ -82,6 +83,7 @@ class _MyAppState extends State<MyApp> {
         '/multi_image_exercise': (context) => const MultiImageExercise(),
         '/settings': (context) => const SettingsPage(),
         '/languages': (context) => const LanguagePage(),
+        '/image_details': (context) => const ImageDetails()
       },
     );
   }

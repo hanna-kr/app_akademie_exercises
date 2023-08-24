@@ -47,9 +47,20 @@ class _MyGalleryListState extends State<MyGalleryList> {
               ),
               itemCount: images.length,
               itemBuilder: (context, index) {
-                return Image.file(
-                  File(images[index]),
-                  fit: BoxFit.cover,
+                return GestureDetector(
+                  child: Image.file(
+                    File(images[index]),
+                    fit: BoxFit.cover,
+                  ),
+                  onTap: () {
+                    Navigator.pushNamed(context, '/image_details',
+                        arguments: images[index]);
+                  },
+                  onLongPress: () {
+                    setState(() {
+                      images.remove(images[index]);
+                    });
+                  },
                 );
               },
             ),
