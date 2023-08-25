@@ -37,7 +37,7 @@ class _MultiImageExerciseState extends State<MultiImageExercise> {
               style: kHeader3,
             ),
             kSpacing8,
-            const Text('Amsterdam, NL'),
+            const Text('Location'),
             kSpacing32,
             Text(
               'Gallery',
