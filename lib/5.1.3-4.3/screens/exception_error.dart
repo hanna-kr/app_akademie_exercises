@@ -1,17 +1,17 @@
-import 'package:app_akademie_exercises/5.1.3-3.4/components/circle_avatar.dart';
-import 'package:app_akademie_exercises/5.1.3-3.4/components/gallery_list.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/components/exception_circleavatar.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/components/gallery_list.dart';
 import 'package:app_akademie_exercises/styles/spacing.dart';
 import 'package:app_akademie_exercises/styles/textstyles.dart';
 import 'package:flutter/material.dart';
 
-class MultiImageExercise extends StatefulWidget {
-  const MultiImageExercise({super.key});
+class ExceptionErrorExercise extends StatefulWidget {
+  const ExceptionErrorExercise({super.key});
 
   @override
-  State<MultiImageExercise> createState() => _MultiImageExerciseState();
+  State<ExceptionErrorExercise> createState() => _MultiImageExerciseState();
 }
 
-class _MultiImageExerciseState extends State<MultiImageExercise> {
+class _MultiImageExerciseState extends State<ExceptionErrorExercise> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +30,7 @@ class _MultiImageExerciseState extends State<MultiImageExercise> {
         padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
         child: Column(
           children: [
-            const MyCircleAvatar(),
+            const ExceptionCircleAvatar(),
             kSpacing16,
             Text(
               'Username',

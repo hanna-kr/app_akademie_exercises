@@ -11,17 +11,18 @@ import 'package:app_akademie_exercises/5.1.1-1.2/screens/material_button_page.da
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/blob_package_exercise.dart';
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/profile.dart';
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/switch_class.dart';
-import 'package:app_akademie_exercises/5.1.3-3.4/screens/box_decoration.dart';
-import 'package:app_akademie_exercises/5.1.3-3.4/screens/camera_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-3.4/screens/font_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-3.4/screens/image_details.dart';
-import 'package:app_akademie_exercises/5.1.3-3.4/screens/image_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-3.4/screens/image_exercise2.dart';
-import 'package:app_akademie_exercises/5.1.3-3.4/screens/image_exercise3.dart';
-import 'package:app_akademie_exercises/5.1.3-3.4/screens/light_dark_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-3.4/screens/multi_image.dart';
-import 'package:app_akademie_exercises/5.1.3-3.4/screens/settings.dart';
-import 'package:app_akademie_exercises/5.1.3-3.4/screens/settings_languages.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/screens/box_decoration.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/screens/camera_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/screens/exception_error.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/screens/font_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/screens/image_details.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/screens/image_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/screens/image_exercise2.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/screens/image_exercise3.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/screens/light_dark_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/screens/multi_image.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/screens/settings.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/screens/settings_languages.dart';
 import 'package:app_akademie_exercises/styles/text_theme.dart';
 import 'package:app_akademie_exercises/styles/theme_color.dart';
 import 'package:flutter/material.dart';
@@ -83,7 +84,8 @@ class _MyAppState extends State<MyApp> {
         '/multi_image_exercise': (context) => const MultiImageExercise(),
         '/settings': (context) => const SettingsPage(),
         '/languages': (context) => const LanguagePage(),
-        '/image_details': (context) => const ImageDetails()
+        '/image_details': (context) => const ImageDetails(),
+        'exception_error': (context) => const ExceptionErrorExercise(),
       },
     );
   }
