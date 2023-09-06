@@ -17,6 +17,12 @@ class _CircleAvatarState extends State<ExceptionCircleAvatar> {
 
   String image = '';
 
+  List exceptions = [
+    DeactivatedCamera(cause: 'Camera permission deactivated'),
+    ImagePickerException(cause: 'Image Picker faulty!'),
+    NetworkProblems(cause: 'Unsteady network')
+  ];
+
   Future pickImage() async {
     final temporaryImage =
         await ImagePicker().pickImage(source: ImageSource.camera);
@@ -27,11 +33,6 @@ class _CircleAvatarState extends State<ExceptionCircleAvatar> {
   }
 
   getRandomException() {
-    List exceptions = [
-      DeactivatedCamera(cause: 'Camera permission deactivated'),
-      ImagePickerException(cause: 'Image Picker faulty!'),
-      NetworkProblems(cause: 'Unsteady network')
-    ];
     int randomIndex = Random().nextInt(exceptions.length);
     var randomChoice = exceptions[randomIndex];
     return randomChoice;
@@ -59,6 +60,7 @@ class _CircleAvatarState extends State<ExceptionCircleAvatar> {
       setState(() {
         icon = Icons.error;
         showDialog3(context);
+        print(error);
       });
     } catch (error) {
       setState(() {});

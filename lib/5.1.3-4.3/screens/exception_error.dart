@@ -18,6 +18,11 @@ class _MultiImageExerciseState extends State<ExceptionErrorExercise> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
         title: const Text('Multi Image Layout'),
+        leading: IconButton(
+            onPressed: () {
+              Navigator.popUntil(context, (route) => route.isFirst);
+            },
+            icon: const Icon(Icons.arrow_back)),
         actions: [
           IconButton(
               onPressed: () {
