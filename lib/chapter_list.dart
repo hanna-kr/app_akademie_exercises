@@ -40,7 +40,8 @@ final List<Chapter> chapters = [
       Exercise(
           name: 'Exception Error / Multi-Image_Layout',
           route: '/exception_error'),
-      Exercise(name: 'Logging', route: '/logging')
+      Exercise(name: 'Logging', route: '/logging'),
+      Exercise(name: 'Async', route: '/async'),
     ],
   )
 ];

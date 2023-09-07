@@ -10,8 +10,8 @@ class DeactivatedCamera implements Exception {
   DeactivatedCamera({required this.cause});
 }
 
-class NetworkProblems implements Exception {
+class SomethingWentWrong implements Exception {
   String cause;
 
-  NetworkProblems({required this.cause});
+  SomethingWentWrong({required this.cause});
 }

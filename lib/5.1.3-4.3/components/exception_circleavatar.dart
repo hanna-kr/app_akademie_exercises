@@ -1,6 +1,7 @@
+// ignore_for_file: avoid_print
+
 import 'dart:io';
 import 'package:app_akademie_exercises/5.1.3-4.3/classes/exceptions.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/exception_error.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:math';
@@ -20,7 +21,7 @@ class _CircleAvatarState extends State<ExceptionCircleAvatar> {
   List exceptions = [
     DeactivatedCamera(cause: 'Camera permission deactivated'),
     ImagePickerException(cause: 'Image Picker faulty!'),
-    NetworkProblems(cause: 'Unsteady network')
+    SomethingWentWrong(cause: 'Unsteady network')
   ];
 
   Future pickImage() async {
@@ -56,7 +57,7 @@ class _CircleAvatarState extends State<ExceptionCircleAvatar> {
         showDialog2(context);
         print(error);
       });
-    } on NetworkProblems catch (error) {
+    } on SomethingWentWrong catch (error) {
       setState(() {
         icon = Icons.error;
         showDialog3(context);
@@ -81,12 +82,7 @@ class _CircleAvatarState extends State<ExceptionCircleAvatar> {
             ElevatedButton(
               child: const Text('Ok'),
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ExceptionErrorExercise(),
-                  ),
-                );
+                Navigator.pop(context);
               },
             ),
           ],
@@ -106,12 +102,7 @@ class _CircleAvatarState extends State<ExceptionCircleAvatar> {
             ElevatedButton(
               child: const Text('Ok'),
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ExceptionErrorExercise(),
-                  ),
-                );
+                Navigator.pop(context);
               },
             ),
           ],
@@ -126,17 +117,12 @@ class _CircleAvatarState extends State<ExceptionCircleAvatar> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text('Achtung:'),
-          content: const Text('Netzwerkfehler'),
+          content: const Text('Ups, da ist was schief gelaufen!'),
           actions: <Widget>[
             ElevatedButton(
               child: const Text('Ok'),
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ExceptionErrorExercise(),
-                  ),
-                );
+                Navigator.pop(context);
               },
             ),
           ],
