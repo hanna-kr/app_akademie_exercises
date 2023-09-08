@@ -42,6 +42,7 @@ final List<Chapter> chapters = [
           route: '/exception_error'),
       Exercise(name: 'Logging', route: '/logging'),
       Exercise(name: 'Async', route: '/async'),
+      Exercise(name: 'Traffic Light', route: '/traffic')
     ],
   )
 ];

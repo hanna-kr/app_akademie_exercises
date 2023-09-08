@@ -7,6 +7,7 @@ import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/weather_app.dart';
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/animation_exercise.dart';
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/cardswipe_package_exercise.dart';
 import 'package:app_akademie_exercises/5.1.3-4.3/screens/async_exercise.dart';
+import 'package:app_akademie_exercises/5.1.3-4.3/screens/traffic.dart';
 import 'package:app_akademie_exercises/home_page.dart';
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/material_button_page.dart';
 import 'package:app_akademie_exercises/5.1.1-1.2/screens/blob_package_exercise.dart';
@@ -113,6 +114,7 @@ class _MyAppState extends State<MyApp> {
         '/exception_error': (context) => const ExceptionErrorExercise(),
         '/logging': (context) => const LoggingExercise(),
         '/async': (context) => const AsyncExercise(),
+        '/traffic': (context) => const TrafficLight(),
       },
     );
   }

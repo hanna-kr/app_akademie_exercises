@@ -140,8 +140,8 @@ class _AsyncExerciseState extends State<AsyncExercise> {
                         ],
                       ),
                       kSpacing32,
-                      GestureDetector(
-                        onTap: () {
+                      MaterialButton(
+                        onPressed: () {
                           startCountdown();
                           resetGif();
                         },
