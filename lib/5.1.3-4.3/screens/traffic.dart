@@ -61,21 +61,21 @@ class _TrafficLightState extends State<TrafficLight> {
                 children: [
                   Container(
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(100),
+                        borderRadius: BorderRadius.circular(30),
                         color: trafficLight1),
                     width: 60,
                     height: 60,
                   ),
                   Container(
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(100),
+                        borderRadius: BorderRadius.circular(30),
                         color: trafficLight2),
                     width: 60,
                     height: 60,
                   ),
                   Container(
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(100),
+                        borderRadius: BorderRadius.circular(30),
                         color: trafficLight3),
                     width: 60,
                     height: 60,

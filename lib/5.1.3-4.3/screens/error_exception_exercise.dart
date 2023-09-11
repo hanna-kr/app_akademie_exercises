@@ -29,74 +29,34 @@ class _MultiImageExerciseState extends State<ExceptionErrorExercise2> {
       throw getRandomException();
     } on ImagePickerException catch (error) {
       setState(() {
-        showDialog1(context);
+        showDialog1(context, 'Achtung:', 'Speicherplatz ist voll!');
       });
-      debugPrint('Error: $error');
+      debugPrint('Error: ${error.cause}');
     } on DeactivatedCamera catch (error) {
       setState(() {
-        showDialog2(context);
-        debugPrint('Error: $error');
+        showDialog1(context, 'Achtung:', 'Kamerazugriff ist deaktiviert!');
+        debugPrint('Error: ${error.cause}');
       });
     } on SomethingWentWrong catch (error) {
       setState(() {
-        showDialog3(context);
-        debugPrint('Error: $error');
+        showDialog1(context, 'Achtung:', 'Ups, da ist was schief gelaufen!');
+        debugPrint('Error: ${error.cause}');
       });
     } catch (error) {
       setState(() {});
-      debugPrint('Error: $error');
+      debugPrint('Error!!!');
     } finally {
-      debugPrint('Clean up');
+      debugPrint('Clean up!!');
     }
   }
 
-  Future<void> showDialog1(BuildContext context) {
+  Future<void> showDialog1(BuildContext context, String title, String content) {
     return showDialog<void>(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text('Achtung:'),
-          content: const Text('Dein Speicherplatz ist voll!'),
-          actions: <Widget>[
-            ElevatedButton(
-              child: const Text('Ok'),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  Future<void> showDialog2(BuildContext context) {
-    return showDialog<void>(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Achtung:'),
-          content: const Text('Kamerazugriff ist deaktiviert!'),
-          actions: <Widget>[
-            ElevatedButton(
-              child: const Text('Ok'),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  Future<void> showDialog3(BuildContext context) {
-    return showDialog<void>(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Achtung:'),
-          content: const Text('Ups, da ist was schief gelaufen!'),
+          title: Text(title),
+          content: Text(content),
           actions: <Widget>[
             ElevatedButton(
               child: const Text('Ok'),
