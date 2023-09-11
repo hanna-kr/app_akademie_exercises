@@ -25,7 +25,7 @@ final List<Chapter> chapters = [
     ],
   ),
   Chapter(
-    title: 'Kapitel 5 Slides 1.3-3.1',
+    title: 'Kapitel 5 Slides 1.3-4.4',
     exercises: [
       Exercise(name: 'Assets / Fonts', route: '/font_exercise'),
       Exercise(
@@ -43,7 +43,8 @@ final List<Chapter> chapters = [
       Exercise(name: 'Error / Exception', route: '/exception_error2'),
       Exercise(name: 'Logging', route: '/logging'),
       Exercise(name: 'Async', route: '/async'),
-      Exercise(name: 'Traffic Light', route: '/traffic')
+      Exercise(name: 'Traffic Light', route: '/traffic'),
+      Exercise(name: 'Futures', route: '/futures')
     ],
   )
 ];
