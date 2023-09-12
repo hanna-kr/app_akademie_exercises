@@ -164,25 +164,32 @@ class _FutureExerciseState extends State<FutureExercise> {
             child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(
-                style: ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll(
-                        Theme.of(context).primaryColor.withOpacity(0.7))),
-                onPressed: () {
-                  buttonFunction();
-                  resetFunction();
-                },
-                child: const Text('Aufgabe 1+2')),
-            kSpacing32,
-            ElevatedButton(
-                style: ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll(
-                        Theme.of(context).primaryColor.withOpacity(0.7))),
-                onPressed: () {
-                  buttonErrorFunction();
-                  resetFunction();
-                },
-                child: const Text('Aufgabe 3+4')),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStatePropertyAll(
+                            Theme.of(context).primaryColor.withOpacity(0.7))),
+                    onPressed: () {
+                      buttonFunction();
+                      resetFunction();
+                    },
+                    child: const Text('Aufgabe 1+2')),
+                const SizedBox(
+                  width: 16,
+                ),
+                ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStatePropertyAll(
+                            Theme.of(context).primaryColor.withOpacity(0.7))),
+                    onPressed: () {
+                      buttonErrorFunction();
+                      resetFunction();
+                    },
+                    child: const Text('Aufgabe 3+4')),
+              ],
+            ),
             kSpacing32,
             if (showText)
               Text(
