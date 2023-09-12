@@ -72,6 +72,9 @@ flutter:
     - assets/images/6oa.gif
     - assets/images/1np8.gif
     - assets/images/14Lo.gif
+    - assets/images/harry1.jpeg
+    - assets/images/harry2.jpeg
+    - assets/images/harry3.jpeg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
