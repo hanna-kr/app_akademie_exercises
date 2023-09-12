@@ -14,8 +14,10 @@ class FutureExercise extends StatefulWidget {
 class _FutureExerciseState extends State<FutureExercise> {
   bool showText = false;
   bool showCount = false;
+  bool showResult = false;
   String text = '';
   String text2 = '';
+  Widget result = const CircularProgressIndicator();
   List<int> numbers = List.generate(100, (index) => index + 1);
   List<Exception> exceptions = [
     DeactivatedCamera(cause: 'Camera permission deactivated'),
@@ -54,33 +56,33 @@ class _FutureExerciseState extends State<FutureExercise> {
   // }
 
   void buttonErrorFunction() {
-    Future.delayed(const Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 8), () {
       throw getRandomException();
-      //return text;
+      //return result;
     }).then((value) {
       setState(() {
-        text = 'Hello, Future!';
+        result = const Text('Hello, Future!');
 
-        showText = true;
+        showResult = true;
       });
     }).catchError((error, stackTrace) {
       setState(() {
         if (error is ImagePickerException) {
-          text = 'Image Error: ${error.cause}';
+          result = Text('Image Error: ${error.cause}');
         } else if (error is DeactivatedCamera) {
-          text = 'Camera Error: ${error.cause}';
+          result = Text('Camera Error: ${error.cause}');
         } else if (error is SomethingWentWrong) {
-          text = 'Error: ${error.cause}';
+          result = Text('Error: ${error.cause}');
         } else {
-          text = 'Unknown Error Occurred';
+          result = const Text('Unknown error occurred');
         }
-        showText = true;
+        showResult = true;
       });
       debugPrint(stackTrace);
-    }).timeout(const Duration(seconds: 3), onTimeout: () {
+    }).timeout(const Duration(seconds: 2), onTimeout: () {
       setState(() {
-        text = 'Timeout';
-        showText = true;
+        result;
+        showResult = true;
       });
     });
   }
@@ -95,6 +97,7 @@ class _FutureExerciseState extends State<FutureExercise> {
     setState(() {
       showText = false;
       showCount = false;
+      showResult = false;
     });
   }
 
@@ -157,40 +160,22 @@ class _FutureExerciseState extends State<FutureExercise> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Futures'),
+          title: const Text('Futures I'),
           backgroundColor: Theme.of(context).primaryColor,
         ),
         body: Center(
             child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                    style: ButtonStyle(
-                        backgroundColor: MaterialStatePropertyAll(
-                            Theme.of(context).primaryColor.withOpacity(0.7))),
-                    onPressed: () {
-                      buttonFunction();
-                      resetFunction();
-                    },
-                    child: const Text('Aufgabe 1+2')),
-                const SizedBox(
-                  width: 16,
-                ),
-                ElevatedButton(
-                    style: ButtonStyle(
-                        backgroundColor: MaterialStatePropertyAll(
-                            Theme.of(context).primaryColor.withOpacity(0.7))),
-                    onPressed: () {
-                      buttonErrorFunction();
-                      resetFunction();
-                    },
-                    child: const Text('Aufgabe 3+4')),
-              ],
-            ),
-            kSpacing32,
+            ElevatedButton(
+                style: ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll(
+                        Theme.of(context).primaryColor.withOpacity(0.7))),
+                onPressed: () {
+                  buttonFunction();
+                  resetFunction();
+                },
+                child: const Text('Aufgabe 1+2')),
             if (showText)
               Text(
                 text,
@@ -218,6 +203,16 @@ class _FutureExerciseState extends State<FutureExercise> {
                   ),
                 ],
               ),
+            ElevatedButton(
+                style: ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll(
+                        Theme.of(context).primaryColor.withOpacity(0.7))),
+                onPressed: () {
+                  buttonErrorFunction();
+                  resetFunction();
+                },
+                child: const Text('Aufgabe 3+4')),
+            if (showResult) result,
             kSpacing32,
             ElevatedButton(
                 style: ButtonStyle(
