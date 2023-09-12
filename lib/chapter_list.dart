@@ -44,7 +44,8 @@ final List<Chapter> chapters = [
       Exercise(name: 'Logging', route: '/logging'),
       Exercise(name: 'Async', route: '/async'),
       Exercise(name: 'Traffic Light', route: '/traffic'),
-      Exercise(name: 'Futures', route: '/futures')
+      Exercise(name: 'Futures I', route: '/futures'),
+      Exercise(name: 'Futures II', route: '/futures2')
     ],
   )
 ];
