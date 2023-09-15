@@ -96,15 +96,7 @@ class _FutureExercise2State extends State<FutureExercise2> {
                         child: image,
                       ))
                   .toList(),
-            ),
-            ElevatedButton(
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(
-                    Theme.of(context).primaryColor.withOpacity(0.7),
-                  ),
-                ),
-                onPressed: () {},
-                child: const Text('Aufgabe 3')),
+            )
           ],
         ),
       ),

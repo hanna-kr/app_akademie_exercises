@@ -60,9 +60,9 @@ class _MyAppState extends State<MyApp> {
         brightness: isDarkMode ? Brightness.dark : Brightness.light,
       ),
       title: 'Combined Exercises',
-      initialRoute: '/',
+      initialRoute: '/home',
       routes: {
-        '/': (context) => const HomePage(),
+        '/home': (context) => const HomePage(),
         '/weather_app': (context) =>
             WeatherApp(weatherData: WeatherData('Berlin', 25, 'sunny')),
         '/column_row': (context) => const MyColumnRowPage(),
