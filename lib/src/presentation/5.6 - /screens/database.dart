@@ -1,3 +1,4 @@
+import 'package:app_akademie_exercises/styles/colors.dart';
 import 'package:app_akademie_exercises/styles/spacing.dart';
 import 'package:app_akademie_exercises/styles/textstyles.dart';
 import 'package:flutter/material.dart';
@@ -15,30 +16,30 @@ class _DataBaseExerciseState extends State<DataBaseExercise> {
   TextEditingController name = TextEditingController();
 
   void storeData() async {
-    SharedPreferences store = await SharedPreferences.getInstance();
-    store.setString('Text1', 'Hi there!');
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    pref.setString('Text1', 'Hi there!');
   }
 
   void retrieveData() async {
-    SharedPreferences retrieve = await SharedPreferences.getInstance();
+    SharedPreferences pref = await SharedPreferences.getInstance();
     setState(() {
-      text = retrieve.getString('Text1') ?? '';
+      text = pref.getString('Text1') ?? '';
     });
   }
 
   void updateData() async {
-    SharedPreferences update = await SharedPreferences.getInstance();
-    update.setString('Text1', 'How are you?');
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    pref.setString('Text1', 'How are you?');
   }
 
   void deleteData() async {
-    SharedPreferences delete = await SharedPreferences.getInstance();
-    delete.remove('Text1');
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    pref.remove('Text1');
   }
 
   void storeName() async {
-    SharedPreferences store = await SharedPreferences.getInstance();
-    store.setString('Name1', name.text);
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    pref.setString('Name1', name.text);
   }
 
   void retrieveName() async {
@@ -66,7 +67,7 @@ class _DataBaseExerciseState extends State<DataBaseExercise> {
                 height: 50,
                 width: 200,
                 decoration:
-                    BoxDecoration(border: Border.all(color: Colors.blue)),
+                    BoxDecoration(border: Border.all(color: Colors.blueGrey)),
                 child: Center(
                   child: Text(
                     text,
@@ -78,18 +79,22 @@ class _DataBaseExerciseState extends State<DataBaseExercise> {
               kSpacing16,
               ElevatedButton(
                 onPressed: storeData,
+                style: buttonStyle,
                 child: const Text('Store Data'),
               ),
               ElevatedButton(
                 onPressed: retrieveData,
+                style: buttonStyle,
                 child: const Text('Retrieve Data'),
               ),
               ElevatedButton(
                 onPressed: updateData,
+                style: buttonStyle,
                 child: const Text('Update Data'),
               ),
               ElevatedButton(
                 onPressed: deleteData,
+                style: buttonStyle,
                 child: const Text('Delete Data'),
               ),
               kSpacing32,
@@ -108,14 +113,16 @@ class _DataBaseExerciseState extends State<DataBaseExercise> {
                 children: [
                   ElevatedButton(
                     onPressed: storeName,
+                    style: buttonStyle,
                     child: const Text('speichern'),
                   ),
                   ElevatedButton(
                     onPressed: retrieveName,
+                    style: buttonStyle,
                     child: const Text('abrufen'),
                   ),
                 ],
-              ),
+              )
             ],
           ),
         ),

@@ -12,6 +12,7 @@ import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/future
 import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/futures_two.dart';
 import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/traffic.dart';
 import 'package:app_akademie_exercises/src/presentation/5.6%20-%20/screens/database.dart';
+import 'package:app_akademie_exercises/src/presentation/5.6%20-%20/screens/database2.dart';
 import 'package:app_akademie_exercises/src/presentation/home_page.dart';
 import 'package:app_akademie_exercises/src/presentation/5.1.1-1.2/screens/material_button_page.dart';
 import 'package:app_akademie_exercises/src/presentation/5.1.1-1.2/screens/blob_package_exercise.dart';
@@ -97,6 +98,7 @@ class _MyAppState extends State<MyApp> {
         '/futures': (context) => const FutureExercise(),
         '/futures2': (context) => const FutureExercise2(),
         '/database': (context) => const DataBaseExercise(),
+        '/database2': (context) => const SaveImageLocallyPage()
       },
     );
   }

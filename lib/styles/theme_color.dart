@@ -5,5 +5,7 @@ ThemeData appAkademieColor =
 
 ThemeData kButtonColor = ThemeData(
     elevatedButtonTheme: const ElevatedButtonThemeData(
-        style: ButtonStyle(
-            backgroundColor: MaterialStatePropertyAll(Colors.blueGrey))));
+      style: ButtonStyle(
+          backgroundColor: MaterialStatePropertyAll(Colors.blueGrey)),
+    ),
+    buttonTheme: ButtonThemeData(buttonColor: appAkademieColor.primaryColor));

@@ -48,7 +48,8 @@ final List<Chapter> chapters = [
       Exercise(name: 'Futures II', route: '/futures2')
     ],
   ),
-  Chapter(
-      title: 'Kapitel 5 Slides 5.6 - ',
-      exercises: [Exercise(name: 'Datenbank', route: '/database')])
+  Chapter(title: 'Kapitel 5 Slides 5.6 - ', exercises: [
+    Exercise(name: 'Datenbank', route: '/database'),
+    Exercise(name: 'Datenbank / Zusatzaufgabe', route: '/database2')
+  ])
 ];
