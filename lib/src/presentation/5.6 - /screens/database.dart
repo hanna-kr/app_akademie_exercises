@@ -13,28 +13,29 @@ class DataBaseExercise extends StatefulWidget {
 
 class _DataBaseExerciseState extends State<DataBaseExercise> {
   String text = '';
+  final String keyText = 'Text1';
   TextEditingController name = TextEditingController();
 
   void storeData() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
-    pref.setString('Text1', 'Hi there!');
+    pref.setString(keyText, 'Hi there!');
   }
 
   void retrieveData() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
     setState(() {
-      text = pref.getString('Text1') ?? '';
+      text = pref.getString(keyText) ?? '';
     });
   }
 
   void updateData() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
-    pref.setString('Text1', 'How are you?');
+    pref.setString(keyText, 'How are you?');
   }
 
   void deleteData() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
-    pref.remove('Text1');
+    pref.remove(keyText);
   }
 
   void storeName() async {
