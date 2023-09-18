@@ -39,7 +39,7 @@ class _SaveImageLocallyPageState extends State<SaveImageLocallyPage> {
             // image
             if (imgPath != null)
               Expanded(
-                child: Image.file(File(imgPath!)),
+                child: Image.file(File(imgPath.toString())),
               ),
             ElevatedButton(
               onPressed: () {
