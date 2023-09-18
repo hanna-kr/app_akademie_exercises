@@ -1,5 +1,5 @@
-import 'package:app_akademie_exercises/5.1.3-4.3/components/circle_avatar.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/components/gallery_list.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/components/circle_avatar.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/components/gallery_list.dart';
 import 'package:app_akademie_exercises/styles/spacing.dart';
 import 'package:app_akademie_exercises/styles/textstyles.dart';
 import 'package:flutter/material.dart';

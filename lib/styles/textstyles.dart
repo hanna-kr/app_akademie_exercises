@@ -15,7 +15,7 @@ TextStyle kHeader2 = const TextStyle(fontSize: 20, fontWeight: FontWeight.w600);
 
 // Small Header
 
-TextStyle kHeader3 = const TextStyle(fontSize: 18, fontWeight: FontWeight.w600);
+TextStyle kHeader3 = const TextStyle(fontSize: 18, fontWeight: FontWeight.w400);
 
 // Font exercise Big header using Merriweather
 

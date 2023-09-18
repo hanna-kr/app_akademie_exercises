@@ -1,5 +1,5 @@
-import 'package:app_akademie_exercises/5.1.1-1.2/classes/chapter.dart';
-import 'package:app_akademie_exercises/5.1.1-1.2/classes/exercise.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.1-1.2/classes/chapter.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.1-1.2/classes/exercise.dart';
 
 final List<Chapter> chapters = [
   Chapter(
@@ -47,5 +47,8 @@ final List<Chapter> chapters = [
       Exercise(name: 'Futures I', route: '/futures'),
       Exercise(name: 'Futures II', route: '/futures2')
     ],
-  )
+  ),
+  Chapter(
+      title: 'Kapitel 5 Slides 5.6 - ',
+      exercises: [Exercise(name: 'Datenbank', route: '/database')])
 ];

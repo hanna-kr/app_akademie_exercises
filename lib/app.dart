@@ -1,34 +1,35 @@
-import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/NavigatorExercise/navigator.dart';
-import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/NavigatorExercise/navigator_details.dart';
-import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/column_row.dart';
-import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/listview.dart';
-import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/sized_box.dart';
-import 'package:app_akademie_exercises/4.5.3-4.6.1/screens/weather_app.dart';
-import 'package:app_akademie_exercises/5.1.1-1.2/screens/animation_exercise.dart';
-import 'package:app_akademie_exercises/5.1.1-1.2/screens/cardswipe_package_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/async_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/error_exception_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/futures.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/futures_two.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/traffic.dart';
-import 'package:app_akademie_exercises/home_page.dart';
-import 'package:app_akademie_exercises/5.1.1-1.2/screens/material_button_page.dart';
-import 'package:app_akademie_exercises/5.1.1-1.2/screens/blob_package_exercise.dart';
-import 'package:app_akademie_exercises/5.1.1-1.2/screens/profile.dart';
-import 'package:app_akademie_exercises/5.1.1-1.2/screens/switch_class.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/box_decoration.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/camera_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/exception_error.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/font_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/image_details.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/image_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/image_exercise2.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/image_exercise3.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/light_dark_exercise.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/logging.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/multi_image.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/settings.dart';
-import 'package:app_akademie_exercises/5.1.3-4.3/screens/settings_languages.dart';
+import 'package:app_akademie_exercises/src/presentation/4.5.3-4.6.1/screens/NavigatorExercise/navigator.dart';
+import 'package:app_akademie_exercises/src/presentation/4.5.3-4.6.1/screens/NavigatorExercise/navigator_details.dart';
+import 'package:app_akademie_exercises/src/presentation/4.5.3-4.6.1/screens/column_row.dart';
+import 'package:app_akademie_exercises/src/presentation/4.5.3-4.6.1/screens/listview.dart';
+import 'package:app_akademie_exercises/src/presentation/4.5.3-4.6.1/screens/sized_box.dart';
+import 'package:app_akademie_exercises/src/presentation/4.5.3-4.6.1/screens/weather_app.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.1-1.2/screens/animation_exercise.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.1-1.2/screens/cardswipe_package_exercise.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/async_exercise.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/error_exception_exercise.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/futures.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/futures_two.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/traffic.dart';
+import 'package:app_akademie_exercises/src/presentation/5.6%20-%20/screens/database.dart';
+import 'package:app_akademie_exercises/src/presentation/home_page.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.1-1.2/screens/material_button_page.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.1-1.2/screens/blob_package_exercise.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.1-1.2/screens/profile.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.1-1.2/screens/switch_class.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/box_decoration.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/camera_exercise.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/exception_error.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/font_exercise.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/image_details.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/image_exercise.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/image_exercise2.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/image_exercise3.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/light_dark_exercise.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/logging.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/multi_image.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/settings.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/screens/settings_languages.dart';
 import 'package:app_akademie_exercises/styles/text_theme.dart';
 import 'package:app_akademie_exercises/styles/theme_color.dart';
 
@@ -94,7 +95,8 @@ class _MyAppState extends State<MyApp> {
         '/traffic': (context) => const TrafficLight(),
         '/exception_error2': (context) => const ExceptionErrorExercise2(),
         '/futures': (context) => const FutureExercise(),
-        '/futures2': (context) => const FutureExercise2()
+        '/futures2': (context) => const FutureExercise2(),
+        '/database': (context) => const DataBaseExercise(),
       },
     );
   }

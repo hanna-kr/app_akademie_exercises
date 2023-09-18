@@ -1,4 +1,4 @@
-import 'package:app_akademie_exercises/5.1.3-4.3/components/card_images.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.3-5.5/components/card_images.dart';
 import 'package:app_akademie_exercises/styles/spacing.dart';
 import 'package:app_akademie_exercises/styles/textstyles.dart';
 import 'package:cached_network_image/cached_network_image.dart';

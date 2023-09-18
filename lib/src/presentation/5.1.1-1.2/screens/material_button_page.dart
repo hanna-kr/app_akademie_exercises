@@ -1,4 +1,4 @@
-import 'package:app_akademie_exercises/5.1.1-1.2/widgets/custom_material_button.dart';
+import 'package:app_akademie_exercises/src/presentation/5.1.1-1.2/widgets/custom_material_button.dart';
 import 'package:flutter/material.dart';
 
 class MyCustomButtonPage extends StatelessWidget {
