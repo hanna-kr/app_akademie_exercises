@@ -50,6 +50,7 @@ final List<Chapter> chapters = [
   ),
   Chapter(title: 'Kapitel 5 Slides 5.6 - ', exercises: [
     Exercise(name: 'Datenbank', route: '/database'),
-    Exercise(name: 'Datenbank / Zusatzaufgabe', route: '/database2')
+    Exercise(name: 'Datenbank / Zusatzaufgabe', route: '/database2'),
+    Exercise(name: 'Hive', route: '/hive'),
   ])
 ];

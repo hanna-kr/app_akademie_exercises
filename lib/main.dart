@@ -3,8 +3,12 @@ import 'package:app_akademie_exercises/styles/spacing.dart';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+  await Hive.openBox<String>('dataBox');
+
   if (kDebugMode || kReleaseMode) {
     ErrorWidget.builder = (details) => Scaffold(
           body: Center(
