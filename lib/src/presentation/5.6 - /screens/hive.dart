@@ -13,6 +13,7 @@ class HiveExercisePage extends StatefulWidget {
 
 class _HiveExercisePageState extends State<HiveExercisePage> {
   String text = '';
+  TextEditingController controller = TextEditingController();
   Box<String> box = Hive.box<String>('dataBox');
 
   void createData() async {
@@ -31,6 +32,18 @@ class _HiveExercisePageState extends State<HiveExercisePage> {
 
   void deleteData() async {
     box.delete('Text1');
+  }
+
+  void createName() async {
+    box.put('Name1', controller.text);
+    debugPrint('hello');
+  }
+
+  void getName() async {
+    setState(() {
+      controller.text = box.get('Name1') ?? '';
+    });
+    debugPrint('hello2');
   }
 
   @override
@@ -70,6 +83,37 @@ class _HiveExercisePageState extends State<HiveExercisePage> {
                   deleteData();
                 },
                 child: const Text('Delete')),
+            kSpacing48,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 32),
+              child: TextField(
+                decoration: const InputDecoration(
+                  label: Text('Name'),
+                ),
+                controller: controller,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 32),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  ElevatedButton(
+                      onPressed: () {
+                        createName();
+                      },
+                      child: const Icon(Icons.save)),
+                  const SizedBox(
+                    width: 16,
+                  ),
+                  ElevatedButton(
+                      onPressed: () {
+                        getName();
+                      },
+                      child: const Icon(Icons.check)),
+                ],
+              ),
+            )
           ],
         ),
       ),
