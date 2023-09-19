@@ -1,4 +1,5 @@
 import 'package:app_akademie_exercises/app.dart';
+import 'package:app_akademie_exercises/src/presentation/5.6%20-%20/model/user.dart';
 import 'package:app_akademie_exercises/styles/spacing.dart';
 
 import 'package:flutter/foundation.dart';
@@ -7,7 +8,9 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async {
   await Hive.initFlutter();
+  Hive.registerAdapter(UserAdapter());
   await Hive.openBox<String>('dataBox');
+  await Hive.openBox<String>('profilePictureBox');
 
   if (kDebugMode || kReleaseMode) {
     ErrorWidget.builder = (details) => Scaffold(
