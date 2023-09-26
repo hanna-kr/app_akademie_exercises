@@ -15,6 +15,7 @@ import 'package:app_akademie_exercises/src/presentation/5.6%20-%20/screens/datab
 import 'package:app_akademie_exercises/src/presentation/5.6%20-%20/screens/database2.dart';
 import 'package:app_akademie_exercises/src/presentation/5.6%20-%20/screens/hive.dart';
 import 'package:app_akademie_exercises/src/presentation/5.6%20-%20/screens/http_client_exercise.dart';
+import 'package:app_akademie_exercises/src/presentation/5.6%20-%20/screens/http_client_exercise2.dart';
 import 'package:app_akademie_exercises/src/presentation/home_page.dart';
 import 'package:app_akademie_exercises/src/presentation/5.1.1-1.2/screens/material_button_page.dart';
 import 'package:app_akademie_exercises/src/presentation/5.1.1-1.2/screens/blob_package_exercise.dart';
@@ -103,6 +104,7 @@ class _MyAppState extends State<MyApp> {
         '/database2': (context) => const SaveImageLocallyPage(),
         '/hive': (context) => const HiveExercisePage(),
         '/http-client': (context) => const HttpClientExercise(),
+        '/http-client-plus': (context) => const HttpExercisePage2(),
       },
     );
   }
