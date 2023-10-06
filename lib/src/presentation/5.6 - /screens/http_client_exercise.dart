@@ -1,7 +1,6 @@
-import 'dart:convert';
 import 'package:app_akademie_exercises/src/presentation/5.6%20-%20/model/user_http_exercise.dart';
+import 'package:app_akademie_exercises/src/presentation/5.6%20-%20/service/user_data_service.dart';
 import 'package:app_akademie_exercises/styles/textstyles.dart';
-import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 
 class HttpClientExercise extends StatefulWidget {
@@ -12,17 +11,7 @@ class HttpClientExercise extends StatefulWidget {
 }
 
 class _HttpClientExerciseState extends State<HttpClientExercise> {
-  Future<List<User2>> fetchUserData() async {
-    Uri url = Uri.https('jsonplaceholder.typicode.com', 'users');
-    http.Response response = await http.get(url);
-    debugPrint(response.body);
-    var jsonResponse = jsonDecode(response.body);
-    if (jsonResponse.runtimeType == List) {
-      return (jsonResponse as List).map((val) => User2.fromJson(val)).toList();
-    } else {
-      return [User2.fromJson(jsonResponse)];
-    }
-  }
+  UserDataService userdata = UserDataService();
 
   Future<void> dialogBuilder(BuildContext context, User2 user) {
     return showDialog<void>(
@@ -62,7 +51,7 @@ class _HttpClientExerciseState extends State<HttpClientExercise> {
               ),
             ),
             FutureBuilder(
-                future: fetchUserData(),
+                future: userdata.fetchUserData(),
                 builder: (context, snapshot) {
                   debugPrint('test');
                   List<User2> userList = snapshot.data ?? [];

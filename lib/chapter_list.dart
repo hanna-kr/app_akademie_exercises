@@ -53,6 +53,5 @@ final List<Chapter> chapters = [
     Exercise(name: 'Datenbank / Zusatzaufgabe', route: '/database2'),
     Exercise(name: 'Hive', route: '/hive'),
     Exercise(name: 'http-client', route: '/http-client'),
-    Exercise(name: 'http-client-Zusatzaufgabe', route: '/http-client-plus')
   ])
 ];

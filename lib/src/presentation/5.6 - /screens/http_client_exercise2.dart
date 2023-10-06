@@ -20,6 +20,7 @@ class _HttpExercisePage2State extends State<HttpExercisePage2> {
     http.Response response = await http.get(url);
     debugPrint(response.body);
     var jsonResponse = jsonDecode(response.body);
+    debugPrint(jsonResponse);
     if (jsonResponse.runtimeType == List) {
       return (jsonResponse as List).map((val) => Post.fromJson(val)).toList();
     } else {
